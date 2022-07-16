@@ -1,0 +1,54 @@
+.container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 55px;
+    align-items: center;
+    margin-left: 50px;
+   
+
+}
+
+.btnDate{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid white; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 10;
+}
+
+.btnDatefill{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.date{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 30px;
+}
+
+.activeDate{
+    animation: up 0.5s ease-in-out;
+    top: -40px;
+}
+
+
+
+@keyframes up {
+    0%{
+        top:30px;
+    }
+    100%{
+        top: -40px;
+    }
+}
+
